@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Chivo+Mono&family=Montserrat&family=Patrick+Hand&family=Roboto&family=Sono&family=Space+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f3eed9;
+  --brown: #824936;
+  --green: #222c2a;
+  --playfair: "Playfair Display", serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+/* Setting up the typography frist*/
+body {
+  margin: 0;
+  font-family: var(--roboto);
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--green);
+}
+
+img {
+  max-width: 100%; /*This keeps the original size of the img as you go big screen */
+}
+
+h1,
+h2 {
+  /* margin: 0; Usulally it's commont to remove the margin for titles */
+  margin-top: 0;
+  font-family: var(--playfair);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+section {
+  padding: 4em 0;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.section-title {
+  font-size: 2.25rem;
+}
+
+.section-title--dark {
+  color: var(--brown);
+  text-align: center;
+}
+
+.intro {
+  background: var(--white);
+  text-align: center;
+  color: var(--brown);
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+}
+
+.intro__text {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1.125rem;
+  color: var(--green);
+  margin: 0 0 0.25em;
+}
+
+.intro__title {
+  font-size: 3rem;
+  color: var(--brown);
+}
+
+.section-three {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.section-four {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    gap: 5em;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .intro__title {
+    font-size: 3.75rem;
+  }
+}
